@@ -19,7 +19,8 @@ public class WidgetProvider extends AppWidgetProvider {
         RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.atmo_layout);
 
         // ボタンイベントを登録
-        remoteViews.setOnClickPendingIntent(R.id.button, clickButton(context));
+//        remoteViews.setOnClickPendingIntent(R.id.button, clickButton(context));
+        remoteViews.setOnClickPendingIntent(R.id.jonki_image, clickButton(context));
 
         // テキストフィールドに"初期画面"と表示
         remoteViews.setTextViewText(R.id.title, "初期画面ぬ");
